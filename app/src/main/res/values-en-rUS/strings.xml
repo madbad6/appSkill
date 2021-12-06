@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAppSkill</string>
+    <string name="title_web">the pictures are taken from</string>
+    <string name="menu">menu</string>
+    <string name="favourites">favourites</string>
+    <string name="late">watch later</string>
+    <string name="collection">selections</string>
+    <string name="setting">settings</string>
+    <string name="title_bar">search</string>
+</resources>

@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madbad.myapp.adapter.FilmListRecyclerAdapter
+import com.madbad.myapp.helper.SimpleItemTouchHelperCallback
 import com.madbad.myapp.model.Film
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         Film("Hawkeye", R.drawable.hawkeye_7, "Hawkeye is an American television miniseries created by Jonathan Igla for the streaming service Disney+, based on Marvel Comics featuring the characters Clint Barton / Hawkeye and Kate Bishop / Hawkeye. It is the fifth television series in the Marvel Cinematic Universe (MCU) produced by Marvel Studios, sharing continuity with the films of the franchise and taking place after the events of the film Avengers: Endgame (2019). Igla serves as head writer with Rhys Thomas leading the directing team."),
         Film("Finch", R.drawable.finch_8, "Finch is a 2021 American post-apocalyptic science fiction drama film directed by Miguel Sapochnik from a spec script written by Craig Luck and Ivor Powell.[1] The film stars Tom Hanks and Caleb Landry Jones.")
     )
+
 
     private lateinit var filmsAdapter: FilmListRecyclerAdapter
 
@@ -42,6 +45,10 @@ class MainActivity : AppCompatActivity() {
             addItemDecoration(decorator)
         }
         filmsAdapter.addItems(filmsDataBase)
+
+        val callbacks = SimpleItemTouchHelperCallback(main_recycler.adapter as FilmListRecyclerAdapter)
+        val touchHelper = ItemTouchHelper(callbacks)
+        touchHelper.attachToRecyclerView(main_recycler)
     }
 
     private fun initNavigation() {

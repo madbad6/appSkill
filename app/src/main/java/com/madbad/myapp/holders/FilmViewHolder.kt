@@ -1,4 +1,4 @@
-package com.madbad.myapp
+package com.madbad.myapp.holders
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

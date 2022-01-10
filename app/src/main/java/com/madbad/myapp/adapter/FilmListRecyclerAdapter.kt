@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.madbad.myapp.model.Film
-import com.madbad.myapp.FilmViewHolder
+import com.madbad.myapp.holders.FilmViewHolder
 import com.madbad.myapp.R
 import kotlinx.android.synthetic.main.film_item.view.*
 

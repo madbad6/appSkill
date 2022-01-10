@@ -1,4 +1,4 @@
-package com.madbad.myapp
+package com.madbad.myapp.utils
 
 import android.content.res.Resources
 import android.graphics.Rect

@@ -8,4 +8,6 @@
     <string name="collection">Подборка</string>
     <string name="setting">Настройка</string>
     <string name="title_bar">Найти</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

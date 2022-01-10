@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".DetailsActivity"
+            android:name=".fragments.DetailsFragment"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
